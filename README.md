@@ -33,8 +33,6 @@ Fruity App is a React and TypeScript-based web application that displays a compr
   - Displays a list of added fruits with quantities.
   - Calculates and shows the total calories.
   - Visualizes caloric distribution using a pie chart.
-- **Search Functionality:** Search for fruits by name.
-- **Persistent State:** Jar contents are saved in the browser's local storage.
 - **Responsive Design:** Optimized for various screen sizes and devices.
 - **Error Handling:** Gracefully handles API errors and displays user-friendly messages.
 
