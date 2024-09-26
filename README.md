@@ -48,6 +48,11 @@ Fruity App is a React and TypeScript-based web application that displays a compr
 
 ![Screenshot 2024-09-26 152729](https://github.com/user-attachments/assets/702d193e-18fd-41db-ab57-b05622654fdc)
 
+### Fruits displayed in a table format with relevant details.
+
+<img width="953" alt="1" src="https://github.com/user-attachments/assets/837ea66e-a949-474a-8465-a8b2f407eef6">
+
+
 ## Technologies Used
 
 - **React:** Front-end library for building user interfaces.
