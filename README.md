@@ -21,7 +21,7 @@ Fruity App is a React and TypeScript-based web application that displays a compr
 
 [Live Demo](https://66f56c7519b2c004b5333b4b--mellow-frangollo-d39e45.netlify.app/)
 
-*To ensure smooth API requests, please visit the [CORS Anywhere](https://cors-anywhere.herokuapp.com/corsdemo) proxy server and grant temporary access.*
+*To ensure smooth API requests, please visit the https://cors-anywhere.herokuapp.com/corsdemo proxy server and grant temporary access.*
 
 ## Features
 
