@@ -1,0 +1,298 @@
+/* Root variables for colors and fonts */
+:root {
+  --primary-color: #2a9d8f;
+  --secondary-color: #e9c46a;
+  --background-color: #f4f4f4;
+  --text-color: #264653;
+  --accent-color: #e76f51;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 230vh;
+}
+
+.left-section {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-basis: 50%;
+  padding: 10px;
+
+  border-right: 1px solid #ddd;
+  background-color: var(--background-color);
+  white-space: normal; /* Ensures text breaks onto the next line */
+  word-wrap: break-word; /* Forces long words to wrap */
+}
+
+.right-section {
+  overflow-y: auto;
+  flex-basis: 50%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.control-group select,
+.control-group button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.control-group button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+
+.control-group button:hover {
+  background-color: #23867a;
+}
+
+/* Fruit List */
+.fruit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fruit-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.fruit-list li:last-child {
+  border-bottom: none;
+}
+
+.fruit-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.fruit-actions button {
+  padding: 6px 12px;
+  margin-left: 10px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fruit-actions button:hover {
+  background-color: #d3a34f;
+}
+
+/* Table Styles */
+.fruit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fruit-table th,
+.fruit-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.fruit-table th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.fruit-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.fruit-table .fruit-actions button {
+  padding: 6px 12px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fruit-table .fruit-actions button:hover {
+  background-color: #d3a34f;
+}
+
+/* Jar Section */
+.jar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.jar h2 {
+  margin-bottom: 20px;
+}
+
+.jar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jar-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.jar-list li:last-child {
+  border-bottom: none;
+}
+
+.total-calories {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.jar button {
+  padding: 10px 15px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.jar button:hover {
+  background-color: #cc5a45;
+}
+
+/* Pie Chart */
+.pie-chart-container {
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    flex: none;
+    width: 100%;
+    height: auto;
+    border-right: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+/* ... existing styles ... */
+
+/* GroupBySelect Styles */
+.group-by-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.group-by-select label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.group-by-select label i {
+  margin-right: 5px;
+  color: var(--primary-color);
+}
+
+.group-by-select select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.group-by-select select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.2);
+}
+/* Layout for different screen sizes */
+@media (max-width: 1024px) {
+  /* Keep two-column layout, but slightly more compact */
+  .left-section,
+  .right-section {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack sections vertically on smaller screens */
+  .app-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    flex-basis: 100%;
+    max-width: 100%; /* Ensure sections don't exceed viewport width */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust paddings and font sizes for very small devices */
+  body {
+    font-size: 14px;
+    padding: 0 0px; /* Adds a bit of padding to the body for better content spacing */
+  }
+
+  .control-group select,
+  .control-group button {
+    padding: 6px 10px;
+    font-size: 14px; /* Ensures button and select text remain readable */
+    width: 100%; /* Makes the inputs and buttons span the entire width */
+  }
+
+  .fruit-actions button {
+    padding: 4px 8px;
+    font-size: 12px; /* Reduces font size slightly for smaller buttons */
+    width: 100%; /* Ensures the buttons take full width in small screens */
+  }
+
+  .left-section {
+    flex-basis: 50%;
+    max-width: 100vw;
+    margin-bottom: 10px;
+  }
+  .right-section {
+    flex-basis: 100%;
+
+    margin-bottom: 10px; /* Adds space between sections if stacked vertically */
+  }
+}
