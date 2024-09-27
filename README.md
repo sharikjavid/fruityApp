@@ -73,4 +73,4 @@ Follow these steps to set up the Fruity App locally on your machine.
    ```bash
    git clone https://github.com/your-username/fruity-app.git
    cd fruity-app
-   nmp start
+   npm start
